@@ -21,11 +21,25 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7d3-2Y-iej">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N62-AM-SZN">
+                                <rect key="frame" x="24" y="563" width="80" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="1AO-XT-TSs"/>
+                                    <constraint firstAttribute="width" constant="80" id="PRk-jb-AUp"/>
+                                </constraints>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uOe-m5-pIp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="7d3-2Y-iej" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="CRe-LI-Y9R"/>
                             <constraint firstItem="7d3-2Y-iej" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FEn-n1-HdC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="N62-AM-SZN" secondAttribute="bottom" constant="24" id="JfZ-g5-B0P"/>
+                            <constraint firstItem="N62-AM-SZN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="Nw8-B6-vel"/>
                             <constraint firstItem="7d3-2Y-iej" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="P3C-LV-myq"/>
                             <constraint firstItem="7d3-2Y-iej" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qRB-pE-KqF"/>
                         </constraints>
